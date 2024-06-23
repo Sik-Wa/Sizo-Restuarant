@@ -2,18 +2,20 @@ import  { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import { Link } from "react-router-dom";
-
+import img from '../../assets/menu.jpg'
 export const Hero = () => {
   return (
     <div className="bg-white">
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imgUrl={img}
         subheading="MUNATI !!"
         heading="WA-SIZO-SALUNA."
       >
         <Content />
       </TextParallaxContent>
-    
+     
+    <Cards/>
+    <Times/>
     </div>
   );
 };
@@ -119,3 +121,97 @@ const Content = () => (
     </div>
   </div>
 );
+
+//  put this in the div  
+ 
+ export const Cards = () => {
+   return (
+     <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
+    
+     
+
+    
+ <h2 className="col-span-1 text-3xl flex items-center justify-center font-bold md:col-span-4">
+        <div style={{backgroundImage:`url(${img})`}} className=" col-span-2 w-full bg-black bg-cover object-cover bg-center h-96
+           rounded-[40px] group relative shadow shadow-[#d47a54] overflow-hidden" >
+          <div className=" w-full flex flex-col absolute -bottom-full p-4 group-hover:bottom-0 
+          delay-150 duration-500 bg-[#d47a54] overflow-hidden">
+             <p className=" text-lg font-bold ">Check out our Menu.</p>
+             <p className=" text-sm">
+              Explore the core essence of our existence.
+               
+             </p>
+             <Link className=" px-2 py-2 rounded flex items-center justify-center font-semibold text-lg md:text-xl
+              bg-black text-white hover:bg-white hover:text-black" to='/Blog'>See Menu</Link>
+          </div>
+          <Link to='/Home' className=" font-serif text-xl flex items-center justify-center text-white ">
+          MENU 
+          </Link>
+          </div>
+    </h2>
+    <h2 className="col-span-1 text-3xl flex items-center justify-center font-bold md:col-span-4">
+    <div className="col-span-2 w-full bg-black bg-cover object-cover bg-center h-96
+           rounded-[40px] group relative shadow shadow-[#d47a54] overflow-hidden" >
+          <div className=" w-full flex flex-col absolute -bottom-full p-4 group-hover:bottom-0 
+          delay-150 duration-500 bg-[#d47a54] overflow-hidden">
+             <p className=" text-lg font-bold ">Learn about our roots.</p>
+             <p className=" text-sm">
+              
+             </p>
+             <Link className=" px-2 py-2 rounded font-semibold text-lg md:text-xl
+              bg-black text-white hover:bg-white hover:text-black" to='/Blog'>Click</Link>
+          </div>
+          <Link to='/Home' className=" font-serif text-xl flex items-center justify-center text-white ">
+          Our Origin
+          </Link>
+          </div>
+    </h2>
+    <h2 className="col-span-1 text-3xl flex items-center justify-center font-bold md:col-span-4">
+    <div className="col-span-2 w-full bg-black bg-cover object-cover bg-center h-96
+           rounded-[40px] group relative shadow shadow-[#d47a54] overflow-hidden" >
+          <div className=" w-full flex flex-col absolute -bottom-full p-4 group-hover:bottom-0 
+          delay-150 duration-500 bg-[#d47a54] overflow-hidden">
+             <p className=" text-lg font-bold ">.</p>
+             <p className=" text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+               Odit similique ipsa ipsam. Facilis iusto placeat amet. Voluptas qui porro fuga.
+             </p>
+             <Link className=" px-2 py-2 rounded items-center justify-center flex font-semibold text-lg md:text-xl
+              bg-black text-white hover:bg-white hover:text-black" to='/Blog'>See Menu</Link>
+          </div>
+          <Link to='/Home' className=" font-serif text-xl flex items-center justify-center text-white ">
+          Book/Reserve
+          </Link>
+          </div>
+    </h2>
+    </div>
+    
+   )
+ }
+
+
+ 
+ export const Times = () => {
+   return (
+     <div className=" flex  items-center justify-center gap-4 bg-pink-300 md:gap-10 border border-gray-400">
+      <div className=" mt-4 flex flex-col items-center justify-center md:py-8 ">
+      <h2 className=" font-extrabold text-4xl">Time and Days</h2>
+      <h3 className=" font-bold text-lg">Tuesday - Thursday <br /> 
+      <span className=" font-medium text-base flex items-center justify-center"> 06:30 - 22:30</span></h3>
+      <h3 className=" font-bold text-lg">Friday<br /> 
+      <span  className=" font-medium text-base flex items-center justify-center"> 06:30 - 23:30</span></h3>
+      <h3 className=" font-bold text-lg">Saturday<br /> 
+      <span  className=" font-medium text-base flex items-center justify-center"> 06:30 - 23:30</span></h3>
+      <h3 className=" font-bold text-lg">Sunday<br /> 
+      <span  className=" font-medium text-base text-gray-500 flex items-center justify-center line-through ">OFF</span></h3>
+      </div>
+    
+     </div>
+   )
+ }
+ 
+ 
+
+
+
+
