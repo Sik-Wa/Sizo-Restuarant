@@ -16,6 +16,7 @@ export const Hero = () => {
      
     <Cards/>
     <Times/>
+    <Footer/>
     </div>
   );
 };
@@ -193,7 +194,7 @@ const Content = () => (
  
  export const Times = () => {
    return (
-     <div className=" flex  items-center justify-center gap-4 bg-pink-300 md:gap-10 border border-gray-400">
+     <div className=" flex flex-col  items-center justify-center gap-4 bg-pink-300 md:gap-10 border border-gray-400">
       <div className=" mt-4 flex flex-col items-center justify-center md:py-8 ">
       <h2 className=" font-extrabold text-4xl">Time and Days</h2>
       <h3 className=" font-bold text-lg">Tuesday - Thursday <br /> 
@@ -203,15 +204,136 @@ const Content = () => (
       <h3 className=" font-bold text-lg">Saturday<br /> 
       <span  className=" font-medium text-base flex items-center justify-center"> 06:30 - 23:30</span></h3>
       <h3 className=" font-bold text-lg">Sunday<br /> 
-      <span  className=" font-medium text-base text-gray-500 flex items-center justify-center line-through ">OFF</span></h3>
+      <span  className=" font-medium text-base text-gray-500
+       flex items-center justify-center line-through ">OFF</span></h3>
+     
       </div>
-    
      </div>
    )
  }
  
  
 
+
+export const Footer = () => {
+  return (
+    
+    <div className=" flex flex-col  items-center justify-center gap-4 bg-black md:gap-10 border border-gray-400">
+    <div className=" mt-4 flex flex-col items-center justify-center md:py-8 ">
+   <div className=" mt-14 bg-secondary text-white">
+      <div className="flex flex-col md:flex-row justify-between p-8 lg:px-28 md:px-16 px-5">
+        <div className=" w-full md:w-1/4">
+          <h1 className=" font-semibold text-2xl pb-4">SIZO</h1>
+          <p className=" mb-2 text-sm">
+    
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam autem
+            ea alias labore voluptatem sed assumenda, ipsum maxime ratione ipsa?
+          </p>
+        </div>
+        <div>
+          <h1 className=" font-semibold text-xl pb-4 pt-5 md:pt-0">
+            pages Links
+          </h1>
+          <div className=" flex flex-col gap-2 font-medium">
+            <Link
+              to="/about"
+              className=" hover:translate-x-3 transition duration-200 ease-linear"
+            >
+              About Us
+            </Link>
+            <Link
+              to="/cars"
+              className=" hover:translate-x-3 transition duration-200 ease-linear"
+            >
+              Our Menu
+            </Link>
+            <Link
+              to="/services"
+              className=" hover:translate-x-3 transition duration-200 ease-linear"
+            >
+              Order
+            </Link>
+          </div>
+        </div>
+
+        <div>
+          <Link to='/' className="mt-2 underline flex text-center justify-center font-semibold text-xl pb-4 pt-5 md:pt-0">
+            Make a reservation
+          </Link>
+          <div className=" flex flex-col gap-2 font-medium">
+            <Link
+              to="/"
+              className=" hover:translate-x-3 transition duration-200 ease-linear"
+            >
+              Breakfast
+            </Link>
+            <Link
+              to="/"
+              className=" hover:translate-x-3 transition duration-200 ease-linear"
+            >
+              Lunch
+            </Link>
+            <Link
+              to="/"
+              className=" hover:translate-x-3 transition duration-200 ease-linear"
+            >
+              Dinner
+            </Link>
+            <Link
+              to="/"
+              className=" rounded border flex text-center justify-center hover:translate-x-3 transition duration-200 ease-linear"
+            >
+              Book us
+            </Link>
+          </div>
+        </div>
+
+        <div>
+          <Link to='/' className=" mt-2 underline flex text-center justify-center font-semibold text-xl pb-4 pt-5 md:pt-0">
+            Learn More
+          </Link>
+          <div className=" flex flex-col gap-2 font-medium">
+            <Link
+              to="/"
+              className=" hover:translate-x-3 transition duration-200 ease-linear"
+            >
+              Our History
+            </Link>
+            <Link
+              to="/"
+              className=" hover:translate-x-3 transition duration-200 ease-linear"
+            >
+              Our Location
+            </Link>
+            <Link
+              to="/"
+              className=" hover:translate-x-3 transition duration-200 ease-linear"
+            >
+              Our Team
+            </Link>
+            <Link
+              to="/"
+              className=" hover:translate-x-3 transition duration-200 ease-linear"
+            >
+             Contact us
+            </Link>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p className=" text-center py-4">
+          @copyright developed by
+          <span className=" text-primary font-semibold mx-2">
+            Sikwa
+          </span>
+          | All rights reserved
+        </p>
+      </div>
+    </div>
+    </div>
+   </div>
+  )
+}
 
 
 
