@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
-
+import img from '../../assets/cake-tea.jpg'
 
 const History = () => {
   return (
     <div>
       <div className=" w-full mx-auto  min-h-screen flex flex-col gap-y-5 items-center justify-center overflow-hidden p-4">
         <div className=" w-full grid grid-cols-1 md:grid-cols-4 items-center justify-center  gap-1">
-          <div className=" w-full shadow shadow-[#54d0d4] flex col-span-4 md:row-span-10 h-96 md:h-[310px]"></div>
+          <div 
+           style={{backgroundImage:`url(${img})`}}
+          className=" w-full bg-cover overflow-hidden shadow shadow-[#54d0d4] flex col-span-4 md:row-span-10 h-96 md:h-[310px]"></div>
         </div>
         <div>
           <div>
