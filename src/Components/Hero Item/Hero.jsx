@@ -106,7 +106,7 @@ const Content = () => (
       HELLO 
     </h2>
     <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
+      <p className="mb-4 text-xl text-neutral-600 md:text-2xl break-all">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
         blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima
         maiores voluptate est ut saepe accusantium maxime doloremque nulla
@@ -173,7 +173,7 @@ const Content = () => (
           <div className=" w-full flex flex-col absolute -bottom-full p-4 group-hover:bottom-0 
           delay-150 duration-500 bg-[#d47a54] overflow-hidden">
              <p className=" text-lg font-bold ">.</p>
-             <p className=" text-sm">
+             <p className=" text-sm break-all">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                Odit similique ipsa ipsam. Facilis iusto placeat amet. Voluptas qui porro fuga.
              </p>
@@ -194,7 +194,7 @@ const Content = () => (
  
  export const Times = () => {
    return (
-     <div className=" flex flex-col  items-center justify-center gap-4 bg-pink-300 md:gap-10 border border-gray-400">
+     <div className=" flex flex-col  items-center justify-end gap-4 bg-pink-300 md:gap-10 border border-gray-400">
       <div className=" mt-4 flex flex-col items-center justify-center md:py-8 ">
       <h2 className=" font-extrabold text-4xl">Time and Days</h2>
       <h3 className=" font-bold text-lg">Tuesday - Thursday <br /> 

@@ -1,8 +1,11 @@
-
-
+import Nav from '../Components/Nav/Nav'
+import History from '../Components/About/History'
 const About = () => {
   return (
-    <div>About</div>
+   <div>
+    <Nav/>
+    <History/>
+   </div>
   )
 }
 
