@@ -1,8 +1,12 @@
+import Nav from "../Components/Nav/Nav"
+
 
 
 const Faqs = () => {
   return (
-    <div>Faqs</div>
+    <div>
+      <Nav/>
+    </div>
   )
 }
 

@@ -1,8 +1,13 @@
+import Nav from "../Components/Nav/Nav"
+
 
 
 const Testimonials = () => {
   return (
-    <div>Testimonials</div>
+    <div>
+      <Nav/>
+     
+    </div>
   )
 }
 

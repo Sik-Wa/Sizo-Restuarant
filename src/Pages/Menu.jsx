@@ -1,11 +1,11 @@
-import { Food } from "../Components/testimonial/Food"
+import Foods from '../Components/Menu Items/Foods'
 import Nav from '../Components/Nav/Nav'
 
 const Menu = () => {
   return (
     <div>
       <Nav/>
-      <Food/>
+      <Foods/>
     </div>
   )
 }
