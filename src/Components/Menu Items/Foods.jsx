@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import vid from "../../assets/Food.mp4";
 import vid1 from "../../assets/chapatti.mp4";
-import vid2 from "../../assets/coffee.mp4";
+import vid2 from "../../assets/lemontea.mp4";
 import vid3 from "../../assets/meat.mp4";
+import vid4 from "../../assets/pourwine.mp4";
+import vid5 from "../../assets/shop.mp4";
 const Foods = () => {
   return (
     <div>
@@ -37,18 +39,21 @@ const Foods = () => {
               </p>
             </div>
           </div>
-          <div className=" w-full grid grid-cols-1 md:grid-cols-4 items-center justify-center mt-4  gap-2">
+          <div className=" w-full grid grid-cols-1 md:grid-cols-4 items-center justify-center">
+         
           <div
-              className="  w-full bg-cover overflow-hidden  
-          flex col-span-4 md:col-span-2 h-[300px] md:h-[500px]"
+             className="col-span-4 text-3xl flex items-center justify-center font-bold md:col-span-2"
             >
-              <div className=" w-full bg-cover">
+              <div >
 
              
-              <video autoPlay loop muted>
-                <source src={vid1} type="video/mp4" />
+               <video
+               className="col-span-4 w-full  bg-cover object-cover bg-center h-96 md:h-[300px]
+           rounded-[40px] group relative shadow shadow-[#d47a54] overflow-hidden"
+               autoPlay loop muted>
+                <source src={vid2} type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video> 
               
               <div className=" flex items-center justify-center">
                 <h1>stuff</h1>
@@ -56,17 +61,21 @@ const Foods = () => {
               </div>
               </div>
             </div>
+
+       
             <div
-              className="  w-full bg-cover overflow-hidden  
-          flex col-span-4 md:col-span-2 h-[300px] md:h-[500px]"
+             className="col-span-4 text-3xl flex items-center justify-center font-bold md:col-span-2"
             >
-              <div className=" w-full bg-cover">
+              <div className="">
 
              
-              <video autoPlay loop muted>
-                <source src={vid2} type="video/mp4" />
+               <video
+              className="col-span-4 w-full  bg-cover object-cover bg-center h-96 md:h-[300px]
+           rounded-[40px] group relative shadow shadow-[#d47a54] overflow-hidden"
+               autoPlay loop muted>
+                <source src={vid1} type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video> 
               
               <div className=" flex items-center justify-center">
                 <h1>stuff</h1>
@@ -76,32 +85,36 @@ const Foods = () => {
             </div>
            
             <div
-              className="  w-full bg-cover overflow-hidden  
-          flex col-span-4 md:col-span-4 h-[300px] md:h-[800px]"
+             className="col-span-4 text-3xl flex items-center justify-center font-bold md:col-span-8"
             >
-              <div className=" w-full bg-cover overflow-hidden">
-              <video autoPlay loop muted>
+              <div >
+
+             
+               <video
+              className="col-span-4 md:col-span-4 w-full  bg-cover object-cover bg-center h-96 md:h-[500px]
+           rounded-[40px] group relative shadow shadow-[#d47a54] overflow-hidden"
+               autoPlay loop muted>
                 <source src={vid3} type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
-              </div>
-              <div>
-              <h1>stuff</h1>
-              </div>
-              <div>
-                
+              </video> 
               
+              <div className=" flex items-center justify-center">
+                <h1>stuff</h1>
+              
+              </div>
               </div>
             </div>
             <div
-              className="  w-full bg-cover overflow-hidden  
-          flex col-span-4 md:col-span-2 h-[300px] md:h-[500px]"
+               className="col-span-4 text-3xl flex items-center justify-center font-bold md:col-span-2"
             >
-              <div className=" w-full bg-cover">
+              <div >
 
              
-              <video autoPlay loop muted>
-                <source src={vid} type="video/mp4" />
+              <video 
+               className="col-span-4 w-full  bg-cover object-cover bg-center h-96 md:h-[300px]
+           rounded-[40px] group relative shadow shadow-[#d47a54] overflow-hidden"
+              autoPlay loop muted>
+                <source src={vid4} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               
@@ -112,14 +125,16 @@ const Foods = () => {
               </div>
             </div>
             <div
-              className="  w-full bg-cover overflow-hidden  
-          flex col-span-4 md:col-span-2 h-[300px] md:h-[500px]"
+             className="col-span-4 text-3xl flex items-center justify-center font-bold md:col-span-2"
             >
-              <div className=" w-full bg-cover">
+              <div >
 
              
-              <video autoPlay loop muted>
-                <source src={vid} type="video/mp4" />
+              <video
+                className="col-span-4 w-full  bg-cover object-cover bg-center h-96 md:h-[300px]
+           rounded-[40px] group relative shadow shadow-[#d47a54] overflow-hidden"
+              autoPlay loop muted>
+                <source src={vid5} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               
